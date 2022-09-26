@@ -1,0 +1,25 @@
+body{
+    background-color: darkred;
+    text-align: center;
+    color: white;
+
+}
+
+form {
+    width: 20%;
+    margin: 0 auto;
+    
+    
+  }
+  
+  label {
+    text-align:center;
+    width:290px;
+    display:block;
+    
+    font-size:18;
+  }
+input{
+    width: 290px;
+    color: black;
+}

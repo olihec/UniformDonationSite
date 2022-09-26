@@ -1,0 +1,986 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="contact form example">
+  <title>Contact Form Example</title>
+  <style>
+  
+    
+  </style>
+</head>
+
+<body>
+  <h2 style="text-align: center;" class="content-head is-center">Donation Form</h2>
+  <aside>
+       
+        <p style="text-align: center;">Please use this form to let us know which items you would like to donate and we will be in contact to discuss the best method of collection
+       </p>
+
+       <p style="text-align: center;">
+         10% of profits will go to pebble's project
+       </p>
+   </aside>
+
+<!-- START HERE -->
+   <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+   <!-- Style The Contact Form How Ever You Prefer -->
+   <link rel="stylesheet" href="style.css" type="text/css">
+
+  <form id = "form" class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net"
+  action="https://script.google.com/macros/s/AKfycbyRElORYRAeLCx648gZ8yEfGioTYjyeM28NHjluaY5gD9w-Q49wekXsdSdU9P2ylXCb/exec" name ="question">
+    <!-- change the form action to your script url -->
+    <p></p>
+    <p></p>
+    <div class="form-elements">
+      <fieldset class="pure-group">
+        <label for="name">Name: </label>
+        <input id="name" name="name" placeholder="e.g. John Smith" />
+      </fieldset>
+
+      <fieldset class="pure-group">
+        <label for="email">Email Address:</label>
+        <input id="email" name="email" type="email" value=""
+        required placeholder="your.name@email.com"/>
+      </fieldset>
+
+      <fieldset class="pure-group">
+        <label for="clothes">Radley white tops no collar</label>
+        
+
+        
+        <input list="sizes" name="Radley white tops no collar" onchange="a()">
+        <datalist id="sizes">
+          <option value="">
+          <option value="X-Small">
+          <option value="Small">
+          <option value="Medium">
+          <option value="Large">
+          <option value="X-Large">
+        </datalist>
+        
+
+        <label for="clothes">Radley white tops collar</label>
+        
+
+        <input list="sizes" name="Radley white tops collar" onchange="b()">
+        <datalist id="sizes">
+          <option value="">
+          <option value="X-Small">
+          <option value="Small">
+          <option value="Medium">
+          <option value="Large">
+          <option value="X-Large">
+        </datalist>
+
+        <label for="clothes">Radley blue shorts</label>
+        
+
+        <input list="sizes" name="Radley blue shorts" onchange="c()">
+        <datalist id="sizes">
+          <option value="">
+          <option value="X-Small">
+          <option value="Small">
+          <option value="Medium">
+          <option value="Large">
+          <option value="X-Large">
+        </datalist>
+
+        <label for="clothes">Radley white shorts</label>
+       
+
+        <input list="sizes" name="Radley white shorts" onchange="d()">
+        <datalist id="sizes">
+          <option value="">
+          <option value="X-Small">
+          <option value="Small">
+          <option value="Medium">
+          <option value="Large">
+          <option value="X-Large">
+        </datalist>
+
+        <label for="clothes">Radley long red socks</label>
+        
+
+        <input list="sizes" name="Radley long red socks" onchange="e()">
+        <datalist id="sizes">
+          <option value="">
+          <option value="X-Small">
+          <option value="Small">
+          <option value="Medium">
+          <option value="Large">
+          <option value="X-Large">
+        </datalist>
+
+        <label for="clothes">Radley red windcoat</label>
+       
+
+        <input list="sizes" name="Radley red windcoat" onchange="f()">
+        <datalist id="sizes">
+          <option value="">
+          <option value="X-Small">
+          <option value="Small">
+          <option value="Medium">
+          <option value="Large">
+          <option value="X-Large">
+        </datalist>
+
+        <label for="clothes">Radley red windcoat LOGO</label>
+        
+
+        <input list="sizes" name="Radley red windcoat LOGO" onchange="g()">
+        <datalist id="sizes">
+          <option value="">
+          <option value="X-Small">
+          <option value="Small">
+          <option value="Medium">
+          <option value="Large">
+          <option value="X-Large">
+        </datalist>
+
+        <label for="clothes">Reversible games shirt</label>
+      
+
+        <input list="sizes" name="Reversible games shirt" onchange="h()">
+        <datalist id="sizes">
+          <option value="">
+          <option value="X-Small">
+          <option value="Small">
+          <option value="Medium">
+          <option value="Large">
+          <option value="X-Large">
+        </datalist>
+
+        <label for="clothes">Reversible Games shirt NO LOGO</label>
+        
+
+        <input list="sizes" name="Reversible Games shirt NO LOGO" onchange="i()">
+        <datalist id="sizes">
+          <option value="">
+          <option value="X-Small">
+          <option value="Small">
+          <option value="Medium">
+          <option value="Large">
+          <option value="X-Large">
+        </datalist>
+
+        <label for="clothes">Quarter zip mid layer top</label>
+        
+
+        <input list="sizes" name="Quarter zip mid layer top" onchange="j()">
+        <datalist id="sizes">
+          <option value="">
+          <option value="X-Small">
+          <option value="Small">
+          <option value="Medium">
+          <option value="Large">
+          <option value="X-Large">
+        </datalist>
+
+        <label for="clothes">Quarter zip mid layer top OLD</label>
+     
+
+        <input list="sizes" name="Quarter zip mid layer top OLD" onchange="k()">
+        <datalist id="sizes">
+          <option value="">
+          <option value="X-Small">
+          <option value="Small">
+          <option value="Medium">
+          <option value="Large">
+          <option value="X-Large">
+        </datalist>
+
+        <label for="clothes">Base layer shorts navy</label>
+       
+
+        <input list="sizes" name="Base layer shorts navy" onchange="l()">
+        <datalist id="sizes">
+          <option value="">
+          <option value="X-Small">
+          <option value="Small">
+          <option value="Medium">
+          <option value="Large">
+          <option value="X-Large">
+        </datalist>
+
+        <label for="clothes">Base layer shorts white </label>
+        
+
+        <input list="sizes" name="Base layer shorts white" onchange="m()">
+        <datalist id="sizes">
+          <option value="">
+          <option value="X-Small">
+          <option value="Small">
+          <option value="Medium">
+          <option value="Large">
+          <option value="X-Large">
+        </datalist>
+
+        <label for="clothes">Radley blue tracksuit bottoms</label>
+       
+
+        <input list="sizes" name="Radley blue tracksuit bottoms" onchange="n()">
+        <datalist id="sizes">
+          <option value="">
+          <option value="X-Small">
+          <option value="Small">
+          <option value="Medium">
+          <option value="Large">
+          <option value="X-Large">
+        </datalist>
+
+        <label for="clothes">Radley blue tracksuits OLD</label>
+       
+
+        <input list="sizes" name="Radley blue tracksuits OLD" onchange="o()">
+        <datalist id="sizes">
+          <option value="">
+          <option value="X-Small">
+          <option value="Small">
+          <option value="Medium">
+          <option value="Large">
+          <option value="X-Large">
+        </datalist>
+
+        <label for="clothes">Lakota style rowing all in one</label>
+       
+
+        <input list="sizes" name="Lakota style rowing all in one" onchange="p()">
+        <datalist id="sizes">
+          <option value="">
+          <option value="X-Small">
+          <option value="Small">
+          <option value="Medium">
+          <option value="Large">
+          <option value="X-Large">
+        </datalist>
+
+        <label for="clothes">Red rowing mid layer</label>
+       
+
+        <input list="sizes" name="Red rowing mid layer" onchange="q()">
+        <datalist id="sizes">
+          <option value="">
+          <option value="X-Small">
+          <option value="Small">
+          <option value="Medium">
+          <option value="Large">
+          <option value="X-Large">
+        </datalist>
+
+        <label for="clothes">Rowing white long sleeved top</label>
+       
+
+        <input list="sizes" name="Rowing white long sleeved top" onchange="r()">
+        <datalist id="sizes">
+          <option value="">
+          <option value="X-Small">
+          <option value="Small">
+          <option value="Medium">
+          <option value="Large">
+          <option value="X-Large">
+        </datalist>
+
+        <label for="clothes">PL white skin</label>
+        
+
+        <input list="sizes" name="PL white skin" onchange="s()">
+        <datalist id="sizes">
+          <option value="">
+          <option value="X-Small">
+          <option value="Small">
+          <option value="Medium">
+          <option value="Large">
+          <option value="X-Large">
+        </datalist>
+
+        <label for="clothes">Radley old fleece</label>
+       
+
+        <input list="sizes" name="Radley old fleece" onchange="t()">
+        <datalist id="sizes">
+          <option value="">
+          <option value="X-Small">
+          <option value="Small">
+          <option value="Medium">
+          <option value="Large">
+          <option value="X-Large">
+        </datalist>
+
+        <label for="clothes">Rowing Wind breaker</label>
+       
+
+        <input list="sizes" name="Rowing Wind breaker" onchange="u()">
+        <datalist id="sizes">
+          <option value="">
+          <option value="X-Small">
+          <option value="Small">
+          <option value="Medium">
+          <option value="Large">
+          <option value="X-Large">
+        </datalist>
+
+        <label for="clothes">Cricket Sweater</label>
+               
+        <input list="sizes" name="Cricket Sweater" onchange="v()">
+        <datalist id="sizes">
+          <option value="">
+          <option value="X-Small">
+          <option value="Small">
+          <option value="Medium">
+          <option value="Large">
+          <option value="X-Large">
+        </datalist>
+
+        <p ></p>
+
+        <label for="clothes">V-neck</label>
+        
+
+        <input list="sizes" name="V-neck" onchange="w()">
+        <datalist id="sizes">
+          <option value="">
+          <option value="X-Small">
+          <option value="Small">
+          <option value="Medium">
+          <option value="Large">
+          <option value="X-Large">
+        </datalist>
+
+        <label for="clothes">Shirts</label>
+
+        <input list="sizes" name="Shirts" onchange="x()">
+        <datalist id="sizes">
+          <option value="">
+          <option value="X-Small">
+          <option value="Small">
+          <option value="Medium">
+          <option value="Large">
+          <option value="X-Large">
+        </datalist>
+      </fieldset>
+      <fieldset class="pure-group">
+
+        <label for="clothes">Trousers</label>
+        <input list="trouser sizes" name="Trousers" onchange="A()">
+        <datalist id="trouser sizes">
+          <option value="">
+          <option value="26'' S">
+          <option value="26'' R">
+          <option value="28'' S">
+          <option value="28'' R">
+          <option value="30'' S">
+          <option value="30'' R"> 
+          <option value="30'' L">      
+          <option value="32'' S">
+          <option value="32'' R">
+          <option value="32'' L">
+          <option value="34'' S">
+          <option value="34'' R">
+          <option value="34'' L">
+          <option value="36'' S">
+          <option value="36'' R">
+          <option value="36'' L">
+          <option value="38'' S">
+          <option value="38'' R">
+          <option value="38'' L">
+          <option value="40'' S">
+          <option value="40'' R">
+          <option value="40'' L">
+
+        </datalist>
+
+        <label for="clothes">John Lewis Trousers Charcoal</label>
+
+        <input list="trouser sizes" name="John Lewis Trousers Charcoal" onchange="B()">
+        <datalist id="trouser sizes">
+          <option value="">
+          <option value="26'' S">
+          <option value="26'' R">
+          <option value="28'' S">
+          <option value="28'' R">
+          <option value="30'' S">
+          <option value="30'' R"> 
+          <option value="30'' L">      
+          <option value="32'' S">
+          <option value="32'' R">
+          <option value="32'' L">
+          <option value="34'' S">
+          <option value="34'' R">
+          <option value="34'' L">
+          <option value="36'' S">
+          <option value="36'' R">
+          <option value="36'' L">
+          <option value="38'' S">
+          <option value="38'' R">
+          <option value="38'' L">
+          <option value="40'' S">
+          <option value="40'' R">
+          <option value="40'' L">
+
+        </datalist>
+
+        <label for="clothes">John Lewis Trousers Light Grey</label>
+        <input list="trouser sizes" name="John Lewis Trousers Light Grey" onchange="C()">
+        <datalist id="trouser sizes">
+          <option value="">
+          <option value="26'' S">
+          <option value="26'' R">
+          <option value="28'' S">
+          <option value="28'' R">
+          <option value="30'' S">
+          <option value="30'' R"> 
+          <option value="30'' L">      
+          <option value="32'' S">
+          <option value="32'' R">
+          <option value="32'' L">
+          <option value="34'' S">
+          <option value="34'' R">
+          <option value="34'' L">
+          <option value="36'' S">
+          <option value="36'' R">
+          <option value="36'' L">
+          <option value="38'' S">
+          <option value="38'' R">
+          <option value="38'' L">
+          <option value="40'' S">
+          <option value="40'' R">
+          <option value="40'' L">
+
+        </datalist>
+
+        <label for="clothes">TM Lewin Trousers</label>
+        <input list="trouser sizes" name="TM Lewin Trousers" onchange="D()">
+        <datalist id="trouser sizes">
+          <option value="">
+          <option value="26'' S">
+          <option value="26'' R">
+          <option value="28'' S">
+          <option value="28'' R">
+          <option value="30'' S">
+          <option value="30'' R"> 
+          <option value="30'' L">      
+          <option value="32'' S">
+          <option value="32'' R">
+          <option value="32'' L">
+          <option value="34'' S">
+          <option value="34'' R">
+          <option value="34'' L">
+          <option value="36'' S">
+          <option value="36'' R">
+          <option value="36'' L">
+          <option value="38'' S">
+          <option value="38'' R">
+          <option value="38'' L">
+          <option value="40'' S">
+          <option value="40'' R">
+          <option value="40'' L">
+
+        </datalist>
+      </fieldset>
+      <fieldset class="pure-group">  
+        <label for="clothes">Gowns</label>
+        <input list="gown sizes" name="Gowns" onchange="E()">
+        <datalist id="gown sizes">
+          <option value="">
+          <option value="A">
+          <option value="B">
+          <option value="C">
+          <option value="D">
+          <option value="E">
+          <option value="F">
+          <option value="G">
+          <option value="H">
+          <option value="J">
+          <option value="K">
+          <option value="L"> 
+        </datalist>
+        
+      </fieldset>
+
+      <fieldset class="pure-group">
+        <label for="donate">Please select if you wish to donate the profits to charity</label>
+        <input id ="donate" type="checkbox" name="donate">
+      </fieldset>
+
+      <fieldset class="pure-group">
+        <h4>Once we recieve your clothes you will receive: </h4>
+        <h3 id ="profit"></h3>
+      </fieldset>
+      
+      <fieldset class="pure-group">
+        <input id="money" type="hidden" name="money">
+      </fieldset>
+
+      <script>
+
+        document.getElementById("form").setAttribute("data-email", document.getElementById("email").value);
+
+        var total = 0;
+        document.getElementById("profit").innerHTML = "£" + total;
+        document.getElementById("money").value = total
+
+        
+        function a() {   
+          var x = document.forms["question"]["Radley white tops no collar"].value;
+          if (x == "X-Small" || x == "Small" || x == "Medium" || x == "Large" || x == "X-Large") {
+            total = total + 4.5;
+              document.getElementById("profit").innerHTML = "£" + total;
+              document.getElementById("money").value = total
+          }
+          else if  (x == ""){
+            total = total - 4.5;
+              document.getElementById("profit").innerHTML = "£" + total;
+              document.getElementById("money").value = total
+          }
+
+        } 
+
+        function b() {   
+          var x = document.forms["question"]["Radley white tops collar"].value;
+          if (x == "X-Small" || x == "Small" || x == "Medium" || x == "Large" || x == "X-Large") {
+            total = total + 4.5;
+              document.getElementById("profit").innerHTML = "£" + total;
+              document.getElementById("money").value = total
+          }
+          else if  (x == ""){
+            total = total - 4.5;
+              document.getElementById("profit").innerHTML = "£" + total;
+              document.getElementById("money").value = total
+          }
+
+        } 
+        
+        function c() {   
+          var x = document.forms["question"]["Radley blue shorts"].value;
+          if (x == "X-Small" || x == "Small" || x == "Medium" || x == "Large" || x == "X-Large") {
+            total = total + 3;
+              document.getElementById("profit").innerHTML = "£" + total;
+              document.getElementById("money").value = total
+          }
+          else if  (x == ""){
+            total = total - 3;
+              document.getElementById("profit").innerHTML = "£" + total;
+              document.getElementById("money").value = total
+          }
+
+        } 
+
+        function d() {   
+          var x = document.forms["question"]["Radley white shorts"].value;
+          if (x == "X-Small" || x == "Small" || x == "Medium" || x == "Large" || x == "X-Large") {
+            total = total + 3;
+              document.getElementById("profit").innerHTML = "£" + total;
+              document.getElementById("money").value = total
+          }
+          else if  (x == ""){
+            total = total - 3;
+              document.getElementById("profit").innerHTML = "£" + total;
+              document.getElementById("money").value = total
+          }
+
+        } 
+
+        function e() {   
+          var x = document.forms["question"]["Radley long red socks"].value;
+          if (x == "X-Small" || x == "Small" || x == "Medium" || x == "Large" || x == "X-Large") {
+            total = total + 0.3;
+              document.getElementById("profit").innerHTML = "£" + total;
+              document.getElementById("money").value = total
+          }
+          else if  (x == ""){
+            total = total - 0.3;
+              document.getElementById("profit").innerHTML = "£" + total;
+              document.getElementById("money").value = total
+          }
+
+        } 
+
+        function f() {   
+          var x = document.forms["question"]["Radley red windcoat"].value;
+          if (x == "X-Small" || x == "Small" || x == "Medium" || x == "Large" || x == "X-Large") {
+            total = total + 6;
+              document.getElementById("profit").innerHTML = "£" + total;
+              document.getElementById("money").value = total
+          }
+          else if  (x == ""){
+            total = total - 6;
+              document.getElementById("profit").innerHTML = "£" + total;
+              document.getElementById("money").value = total
+          }
+
+        } 
+
+        function g() {   
+          var x = document.forms["question"]["Radley red windcoat LOGO"].value;
+          if (x == "X-Small" || x == "Small" || x == "Medium" || x == "Large" || x == "X-Large") {
+            total = total + 4.5;
+              document.getElementById("profit").innerHTML = "£" + total;
+              document.getElementById("money").value = total
+          }
+          else if  (x == ""){
+            total = total - 4.5;
+              document.getElementById("profit").innerHTML = "£" + total;
+              document.getElementById("money").value = total
+          }
+
+        } 
+
+        function h() {   
+          var x = document.forms["question"]["Reversible games shirt"].value;
+          if (x == "X-Small" || x == "Small" || x == "Medium" || x == "Large" || x == "X-Large") {
+            total = total + 7.5;
+              document.getElementById("profit").innerHTML = "£" + total;
+              document.getElementById("money").value = total
+          }
+          else if  (x == ""){
+            total = total - 7.5;
+              document.getElementById("profit").innerHTML = "£" + total;
+              document.getElementById("money").value = total
+          }
+
+        } 
+
+        function i() {   
+          var x = document.forms["question"]["Reversible Games shirt NO LOGO"].value;
+          if (x == "X-Small" || x == "Small" || x == "Medium" || x == "Large" || x == "X-Large") {
+            total = total + 6;
+              document.getElementById("profit").innerHTML = "£" + total;
+              document.getElementById("money").value = total
+          }
+          else if  (x == ""){
+            total = total - 6;
+              document.getElementById("profit").innerHTML = "£" + total;
+              document.getElementById("money").value = total
+          }
+
+        } 
+
+        function j() {   
+          var x = document.forms["question"]["Quarter zip mid layer top"].value;
+          if (x == "X-Small" || x == "Small" || x == "Medium" || x == "Large" || x == "X-Large") {
+            total = total + 6;
+              document.getElementById("profit").innerHTML = "£" + total;
+              document.getElementById("money").value = total
+          }
+          else if  (x == ""){
+            total = total - 6;
+              document.getElementById("profit").innerHTML = "£" + total;
+              document.getElementById("money").value = total
+          }
+
+        } 
+
+        function k() {   
+          var x = document.forms["question"]["Quarter zip mid layer top OLD"].value;
+          if (x == "X-Small" || x == "Small" || x == "Medium" || x == "Large" || x == "X-Large") {
+            total = total + 4.5;
+              document.getElementById("profit").innerHTML = "£" + total;
+              document.getElementById("money").value = total
+          }
+          else if  (x == ""){
+            total = total - 4.5;
+              document.getElementById("profit").innerHTML = "£" + total;
+              document.getElementById("money").value = total
+          }
+
+        } 
+
+        function l() {   
+          var x = document.forms["question"]["Base layer shorts navy"].value;
+          if (x == "X-Small" || x == "Small" || x == "Medium" || x == "Large" || x == "X-Large") {
+            total = total + 3.6;
+              document.getElementById("profit").innerHTML = "£" + total;
+              document.getElementById("money").value = total
+          }
+          else if  (x == ""){
+            total = total - 3.6;
+              document.getElementById("profit").innerHTML = "£" + total;
+              document.getElementById("money").value = total
+          }
+
+        } 
+
+        function m() {   
+          var x = document.forms["question"]["Base layer shorts white "].value;
+          if (x == "X-Small" || x == "Small" || x == "Medium" || x == "Large" || x == "X-Large") {
+            total = total + 3.6;
+              document.getElementById("profit").innerHTML = "£" + total;
+              document.getElementById("money").value = total
+          }
+          else if  (x == ""){
+            total = total - 3.6;
+              document.getElementById("profit").innerHTML = "£" + total;
+              document.getElementById("money").value = total
+          }
+
+        } 
+
+        function n() {   
+          var x = document.forms["question"]["Radley blue tracksuit bottoms"].value;
+          if (x == "X-Small" || x == "Small" || x == "Medium" || x == "Large" || x == "X-Large") {
+            total = total + 6;
+              document.getElementById("profit").innerHTML = "£" + total;
+              document.getElementById("money").value = total
+          }
+          else if  (x == ""){
+            total = total - 6;
+              document.getElementById("profit").innerHTML = "£" + total;
+              document.getElementById("money").value = total
+          }
+
+        } 
+
+        function o() {   
+          var x = document.forms["question"]["Radley blue tracksuits OLD"].value;
+          if (x == "X-Small" || x == "Small" || x == "Medium" || x == "Large" || x == "X-Large") {
+            total = total + 4.5;
+              document.getElementById("profit").innerHTML = "£" + total;
+              document.getElementById("money").value = total
+          }
+          else if  (x == ""){
+            total = total - 4.5;
+              document.getElementById("profit").innerHTML = "£" + total;
+              document.getElementById("money").value = total
+          }
+
+        } 
+
+        function p() {   
+          var x = document.forms["question"]["Lakota style rowing all in one"].value;
+          if (x == "X-Small" || x == "Small" || x == "Medium" || x == "Large" || x == "X-Large") {
+            total = total + 7.5;
+              document.getElementById("profit").innerHTML = "£" + total;
+              document.getElementById("money").value = total
+          }
+          else if  (x == ""){
+            total = total - 7.5;
+              document.getElementById("profit").innerHTML = "£" + total;
+              document.getElementById("money").value = total
+          }
+
+        } 
+
+        function q() {   
+          var x = document.forms["question"]["Red rowing mid layer"].value;
+          if (x == "X-Small" || x == "Small" || x == "Medium" || x == "Large" || x == "X-Large") {
+            total = total + 4.5;
+              document.getElementById("profit").innerHTML = "£" + total;
+              document.getElementById("money").value = total
+          }
+          else if  (x == ""){
+            total = total - 4.5;
+              document.getElementById("profit").innerHTML = "£" + total;
+              document.getElementById("money").value = total
+          }
+
+        } 
+
+        function r() {   
+          var x = document.forms["question"]["Rowing white long sleeved top"].value;
+          if (x == "X-Small" || x == "Small" || x == "Medium" || x == "Large" || x == "X-Large") {
+            total = total + 6;
+              document.getElementById("profit").innerHTML = "£" + total;
+              document.getElementById("money").value = total
+          }
+          else if  (x == ""){
+            total = total - 6;
+              document.getElementById("profit").innerHTML = "£" + total;
+              document.getElementById("money").value = total
+          }
+
+        } 
+
+        function s() {   
+          var x = document.forms["question"]["PL white skin"].value;
+          if (x == "X-Small" || x == "Small" || x == "Medium" || x == "Large" || x == "X-Large") {
+            total = total + 4.5;
+              document.getElementById("profit").innerHTML = "£" + total;
+              document.getElementById("money").value = total
+          }
+          else if  (x == ""){
+            total = total - 4.5;
+              document.getElementById("profit").innerHTML = "£" + total;
+              document.getElementById("money").value = total
+          }
+
+        } 
+
+        function t() {   
+          var x = document.forms["question"]["Radley old fleece"].value;
+          if (x == "X-Small" || x == "Small" || x == "Medium" || x == "Large" || x == "X-Large") {
+            total = total + 9;
+              document.getElementById("profit").innerHTML = "£" + total;
+              document.getElementById("money").value = total
+          }
+          else if  (x == ""){
+            total = total - 9;
+              document.getElementById("profit").innerHTML = "£" + total;
+              document.getElementById("money").value = total
+          }
+
+        } 
+
+        function u() {   
+          var x = document.forms["question"]["Rowing Wind breaker"].value;
+          if (x == "X-Small" || x == "Small" || x == "Medium" || x == "Large" || x == "X-Large") {
+            total = total + 12;
+              document.getElementById("profit").innerHTML = "£" + total;
+              document.getElementById("money").value = total
+          }
+          else if  (x == ""){
+            total = total - 12;
+              document.getElementById("profit").innerHTML = "£" + total;
+              document.getElementById("money").value = total
+          }
+
+        } 
+
+        function v() {   
+          var x = document.forms["question"]["Cricket Sweater"].value;
+          if (x == "X-Small" || x == "Small" || x == "Medium" || x == "Large" || x == "X-Large") {
+            total = total + 22.5;
+              document.getElementById("profit").innerHTML = "£" + total;
+              document.getElementById("money").value = total
+          }
+          else if  (x == ""){
+            total = total - 22.5;
+              document.getElementById("profit").innerHTML = "£" + total;
+              document.getElementById("money").value = total
+          }
+
+        } 
+
+        function w() {   
+          var x = document.forms["question"]["V-neck"].value;
+          if (x == "X-Small" || x == "Small" || x == "Medium" || x == "Large" || x == "X-Large") {
+            total = total + 4.5;
+              document.getElementById("profit").innerHTML = "£" + total;
+              document.getElementById("money").value = total
+          }
+          else if  (x == ""){
+            total = total - 4.5;
+              document.getElementById("profit").innerHTML = "£" + total;
+              document.getElementById("money").value = total
+          }
+
+        } 
+
+        function x() {   
+          var x = document.forms["question"]["Shirts"].value;
+          if (x == "X-Small" || x == "Small" || x == "Medium" || x == "Large" || x == "X-Large") {
+            total = total + 3;
+              document.getElementById("profit").innerHTML = "£" + total;
+              document.getElementById("money").value = total
+          }
+          else if  (x == ""){
+            total = total - 3;
+              document.getElementById("profit").innerHTML = "£" + total;
+              document.getElementById("money").value = total
+          }
+
+        } 
+
+        function A() {   
+          var x = document.forms["question"]["Trousers"].value;
+          if (x == "26'' S" || x == "26'' R" || x == "28'' S" || x == "28'' R" || x == "30'' S" || x == "30'' R" || x == "30'' L" || x == "32'' S"|| x == "32'' R" || x == "32'' L" || x == "34'' S" || x == "34'' R" || x == "34'' L" || x == "36'' S" || x == "36'' R" || x == "36'' L" || x == "38'' S" || x == "38'' R" || x == "38'' L" || x == "40'' S" || x == "40'' R" || x == "40'' L") {
+            total = total + 9;
+              document.getElementById("profit").innerHTML = "£" + total;
+              document.getElementById("money").value = total
+          }
+          else if  (x == ""){
+            total = total - 9;
+              document.getElementById("profit").innerHTML = "£" + total;
+              document.getElementById("money").value = total
+          }
+
+        } 
+
+        function B() {   
+          var x = document.forms["question"]["John Lewis Trousers Charcoal"].value;
+          if (x == "26'' S" || x == "26'' R" || x == "28'' S" || x == "28'' R" || x == "30'' S" || x == "30'' R" || x == "30'' L" || x == "32'' S"|| x == "32'' R" || x == "32'' L" || x == "34'' S" || x == "34'' R" || x == "34'' L" || x == "36'' S" || x == "36'' R" || x == "36'' L" || x == "38'' S" || x == "38'' R" || x == "38'' L" || x == "40'' S" || x == "40'' R" || x == "40'' L") {
+            total = total + 7.5;
+              document.getElementById("profit").innerHTML = "£" + total;
+              document.getElementById("money").value = total
+          }
+          else if  (x == ""){
+            total = total - 7.5;
+              document.getElementById("profit").innerHTML = "£" + total;
+              document.getElementById("money").value = total
+          }
+
+        } 
+
+        function C() {   
+          var x = document.forms["question"]["John Lewis Trousers Light Grey"].value;
+          if (x == "26'' S" || x == "26'' R" || x == "28'' S" || x == "28'' R" || x == "30'' S" || x == "30'' R" || x == "30'' L" || x == "32'' S"|| x == "32'' R" || x == "32'' L" || x == "34'' S" || x == "34'' R" || x == "34'' L" || x == "36'' S" || x == "36'' R" || x == "36'' L" || x == "38'' S" || x == "38'' R" || x == "38'' L" || x == "40'' S" || x == "40'' R" || x == "40'' L") {
+            total = total + 7.5;
+              document.getElementById("profit").innerHTML = "£" + total;
+              document.getElementById("money").value = total
+          }
+          else if  (x == ""){
+            total = total - 7.5;
+              document.getElementById("profit").innerHTML = "£" + total;
+              document.getElementById("money").value = total
+          }
+
+        } 
+
+        function D() {   
+          var x = document.forms["question"]["TM Lewin Trousers"].value;
+          if (x == "26'' S" || x == "26'' R" || x == "28'' S" || x == "28'' R" || x == "30'' S" || x == "30'' R" || x == "30'' L" || x == "32'' S"|| x == "32'' R" || x == "32'' L" || x == "34'' S" || x == "34'' R" || x == "34'' L" || x == "36'' S" || x == "36'' R" || x == "36'' L" || x == "38'' S" || x == "38'' R" || x == "38'' L" || x == "40'' S" || x == "40'' R" || x == "40'' L") {
+            total = total + 9;
+              document.getElementById("profit").innerHTML = "£" + total;
+              document.getElementById("money").value = total
+          }
+          else if  (x == ""){
+            total = total - 9;
+              document.getElementById("profit").innerHTML = "£" + total;
+              document.getElementById("money").value = total
+          }
+
+        } 
+
+        function E() {   
+          var x = document.forms["question"]["Gowns"].value;
+          if (x == "A" || x == "B" || x == "C" || x == "D" || x == "E" || x == "F" || x == "H" || x == "J" || x == "K" || x == "L") {
+            total = total + 12;
+              document.getElementById("profit").innerHTML = "£" + total;
+              document.getElementById("money").value = total
+          }
+          else if  (x == ""){
+            total = total - 12;
+              document.getElementById("profit").innerHTML = "£" + total;
+              document.getElementById("money").value = total
+          }
+
+        } 
+
+        
+      
+
+         
+      </script>
+
+      <button class="button-success pure-button button-xlarge" >
+        <a href = "reuseaform/donation-success"></a>
+        <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+    </div>
+
+    <!-- Customise the Thankyou Message People See when they submit the form: -->
+    <div class="thankyou_message" style="display:none;">
+      <h2><em>Thanks!</em> 
+        We will get back to you soon!</h2>
+    </div>
+
+    
+  </form>
+
+  <!-- Submit the Form to Google Using "AJAX" -->
+  <script data-cfasync="false" src="form-submission-handler.js"></script>
+<!-- END -->
+
+</body>
+</html>
